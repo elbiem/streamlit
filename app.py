@@ -38,7 +38,7 @@ st.set_page_config(page_title="Crypto Crowd Wisdom v2", page_icon="📊", layout
 
 # Авто-обновление дашборда
 REFRESH_MS = 10_000  # 10s
-st.autorefresh(interval=REFRESH_MS, key="auto_refresh_v2")
+st.experimental_autorefresh(interval=REFRESH_MS, key="auto_refresh_v2")
 
 # Sidebar controls
 SYMBOL = st.sidebar.selectbox("Тикер", ["BTC/USDT", "ETH/USDT", "SOL/USDT"], index=0)
